@@ -15,10 +15,10 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "tb_sala")
-public class Sala implements Serializable{
+public class Sala implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SALA_SUC_SEQ")
-    @SequenceGenerator(name="SALA_SUC_SEQ",sequenceName = "tb_sala_cod_sala_seq",allocationSize=1)
+    @SequenceGenerator(name = "SALA_SUC_SEQ", sequenceName = "tb_sala_cod_sala_seq", allocationSize = 1)
     @Column(name = "cod_sala", nullable = false)
     private BigInteger id;
 
